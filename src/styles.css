@@ -37,10 +37,22 @@ html, body {
   height: -webkit-fill-available;
   width: -webkit-fill-available;
 }
-
 .kround {
   border-radius: 2vmin;
 }
+/* -ratio */
+.kratioh {
+  aspect-ratio: 1.61/1;
+  overflow-x: scroll;
+}
+.kratiov {
+  aspect-ratio: 1/1.61;
+}
+.kratior {
+  aspect-ratio: 1/1;
+}
+/* -ratio- */
+
 /* custom content format */
 .ktitle {
   font-weight: bold;
