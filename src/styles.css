@@ -1,1 +1,97 @@
-/* You can add global styles to this file, and also import other style files */
+/* foundation */
+
+::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.page {
+  height: 100vh;
+  width: 100vw;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+}
+.content {
+  background-color: var(--bg-primary);
+}
+@media screen and (min-width: 1200px) {
+  .page {
+    grid-template-rows: 0;
+    grid-template-columns: 15% 70% 15%;
+  }
+}
+/* custom format */
+.kindent {
+  padding-left: 3%;
+  padding-top: 2%;
+}
+
+.kmax {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.kround {
+  border-radius: 2vmin;
+}
+/* custom content format */
+.ktitle {
+  font-weight: bold;
+}
+.kcardContent {
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+/* format combo */
+.kcard {
+  margin: 2.5%;
+  box-shadow: var(--shadow2);
+  overflow: scroll;
+  min-height: 1vh;
+}
+
+/* debug */
+
+* {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+* * {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+* * * {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+* * * * {
+  background-color: rgba(255, 0, 255, 0.1);
+}
+
+* * * * * {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+* * * * * * {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+* * * * * * * {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+* * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+* * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.1);
+}
