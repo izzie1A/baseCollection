@@ -12,14 +12,15 @@ html, body {
   padding: 0px;
   margin: 0px;
   display: grid;
-  grid-template-rows: 15% 70% 15%;
+  grid-template-rows: 85% 15%;
   background-color: var(--bg-primary);
   overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .page {
     grid-template-rows: 100%;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 85% 15%;
+    grid-auto-flow: dense;
   }
 }
 /* -custom format */
@@ -71,11 +72,19 @@ html, body {
 /* -format combo */
 .kcard {
   margin: 2.5%;
-  box-shadow: var(--shadow2);
+  box-shadow: var(--shadowMin);
+  overflow: scroll;
+  min-height: 1vh;
+}
+.kblock {
   overflow: scroll;
   min-height: 1vh;
 }
 
+/* -style */
+.kborder{
+  border: 1px solid var(--black);
+}
 /* -debug */
 
 * {
@@ -128,9 +137,10 @@ html, body {
   --bg-secondary: #c4c4c4;
   /* --bg-secondary: #e5e5e5; */
   --bg-primary: #e5e5e5;
-  
+
   --white: white;
   --black: rgb(40, 40, 40);
+
   --shadow1: rgb(38, 57, 77) 0px 20px 30px -10px,
     rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
