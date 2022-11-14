@@ -6,23 +6,7 @@ html, body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-.page {
-  height: 100vh;
-  width: 100vw;
-  padding: 0px;
-  margin: 0px;
-  display: grid;
-  grid-template-rows: 85% 15%;
-  background-color: var(--bg-primary);
-  overflow: hidden;
-}
-@media screen and (min-width: 1200px) {
-  .page {
-    grid-template-rows: 100%;
-    grid-template-columns: 85% 15%;
-    order: -1
-  }
-}
+
 /* -custom format */
 .kmax {
   height: -webkit-fill-available;
@@ -67,10 +51,22 @@ html, body {
   margin-left: 3%;
   margin-top: 2%;
 }
+.kmargin{
+  margin: 3%;
+}
+.kpadding{
+  padding: 3%;
+}
 .kcenterContent {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.kflex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5%;
+  overflow: scroll;
 }
 
 /* -format combo */
@@ -84,6 +80,66 @@ html, body {
 .kblock {
   overflow: scroll;
   min-height: 1vh;
+}
+.kbutton {
+  font-size: 2vmin;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 0.5vmin solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  margin: 0.5vh;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  overflow: hidden;
+  top: -5px;
+  left: -5px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kbutton:active {
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 0px 0px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kbutton:click {
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 0px 0px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kbutton:focus {
+  background-color: var(--white);
+}
+.kclick {
+  -webkit-appearance: button;
+  appearance: button;
+  background-color: transparent;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #482307;
+  cursor: pointer;
+  text-transform: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: var(--shadow2);
+}
+.kclick:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+    0px 1px 1px rgba(81, 41, 10, 0.15);
+  transform: translateY(0.125rem);
+}
+.kclick:focus {
+  box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px,
+    -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
 }
 
 /* -style */
@@ -132,7 +188,7 @@ html, body {
   background-color: rgba(0, 0, 255, 0.1);
 }
 
-/* debug */
+/* debug end*/
 
 /* color */
 :root {

@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5vmin 5vmin 0vmin 0vmin;
+}
+@media screen and (min-width: 1200px) {
+    .navbar {
+        flex-direction: column;
+        border-radius: 5vmin 0vmin 0vmin 5vmin;
+    }
+  }
