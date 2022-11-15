@@ -17,16 +17,16 @@ html, body {
 }
 
 /* ratio */
-  .kratioh {
-    aspect-ratio: 1.61/1;
-    overflow-x: scroll;
-  }
-  .kratiov {
-    aspect-ratio: 1/1.61;
-  }
-  .kratior {
-    aspect-ratio: 1/1;
-  }
+.kratioh {
+  aspect-ratio: 1.61/1;
+  overflow-x: scroll;
+}
+.kratiov {
+  aspect-ratio: 1/1.61;
+}
+.kratior {
+  aspect-ratio: 1/1;
+}
 /* ratio */
 
 /* -custom content format */
@@ -68,7 +68,13 @@ html, body {
   padding: 0.5%;
   overflow: scroll;
 }
-
+.ktable{
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.kicon{
+  min-width: 10vw;
+}
 /* -format combo */
 .kcard {
   margin: 2.5%;
