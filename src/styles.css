@@ -15,6 +15,9 @@ html, body {
 .kround {
   border-radius: 2vmin;
 }
+.kfullRound{
+  border-radius: 100%;
+}
 
 /* ratio */
 .kratioh {
@@ -35,10 +38,6 @@ html, body {
 }
 .kcontentText {
   font-size: 1rem;
-;}
-.kcardContent {
-  display: grid;
-  grid-template-rows: 20% 80%;
 }
 .ktest {
   padding: 3%;

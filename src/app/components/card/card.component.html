@@ -1,7 +1,24 @@
-<div  class="kborder kcard kround kcardContent kratioh">
-    <div class="ktable">
-        <div class="kicon kcenterContent">icon</div>
-        <div id="title" class="kborderb kindent ktitle">mainTitle</div>
+<div id="card" class="kcard kratioh kround kborder">
+    <div class="cardColumn kborderb">
+        <div class="kcenterContent">
+            <div id="cardIcon">icon</div>
+        </div>
+        <div id="title" class="ktitle">MainTitle</div>
+    </div>  
+    <div *ngIf="inputData.length>3">
+        <div id="contentRow" class="kmax">
+            <div class="cardColumn kmax" *ngFor="let item of inputData; let i = index">
+                <div class="kcenterContent">{{i+1}}</div>
+                <div class="kcenterContent">{{item}}</div>
+            </div>
+        </div>
     </div>
-    <div id="content" class="kindent">mainContent: {{inputData}}</div>
+    <div *ngIf="inputData.length<4">
+        <div id="contentRow" class="kmax">
+            <div class="cardColumn kmax" *ngFor="let item of inputData; let i = index">
+                <div class="kcenterContent">{{i+1}}</div>
+                <div class="kcenterContent">{{item}}</div>
+            </div>
+        </div>
+    </div>
 </div>
