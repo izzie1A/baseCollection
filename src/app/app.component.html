@@ -1,7 +1,9 @@
 <div class="page">
-  <div class="kblock ">
+  <div class="appcomponent">
     <app-header></app-header>
-    <app-card [inputData]="defaultData"></app-card>
+    <div class="">
+      <app-card [inputData]="defaultData"></app-card>
+    </div>
+    <app-nav-bar [inputData]="defaultData"></app-nav-bar>
   </div>
-  <app-nav-bar></app-nav-bar>
 </div>

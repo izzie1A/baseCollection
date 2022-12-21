@@ -1,0 +1,222 @@
+/* foundation */
+::-webkit-scrollbar {
+  display: none;
+}
+html, body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* -custom format */
+.kmax {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+.kround {
+  border-radius: 2vmin;
+}
+.kfullRound{
+  border-radius: 100%;
+}
+
+/* ratio */
+.kratioh {
+  aspect-ratio: 1.61/1;
+  overflow-x: scroll;
+}
+.kratiov {
+  aspect-ratio: 1/1.61;
+}
+.kratior {
+  aspect-ratio: 1/1;
+}
+/* ratio */
+
+/* -custom content format */
+.ktitle {
+  font-weight: bold;
+}
+.kcontentText {
+  font-size: 1rem;
+}
+.ktest {
+  padding: 3%;
+}
+.kindent {
+  padding-left: 3%;
+  padding-top: 2%;
+}
+.kexdent {
+  margin-left: 3%;
+  margin-top: 2%;
+}
+.kmargin{
+  margin: 3%;
+}
+.kpadding{
+  padding: 3%;
+}
+.kcenterContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.kflex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5%;
+  overflow: scroll;
+}
+.ktable{
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.kicon{
+  min-width: 10vw;
+}
+/* -format combo */
+.kcard {
+  margin: 2.5%;
+  box-shadow: var(--shadowMin);
+  overflow: scroll;
+  min-height: 1vh;
+  font-size: 1rem;
+}
+.kblock {
+  overflow: scroll;
+  min-height: 1vh;
+}
+.kbutton {
+  font-size: 2vmin;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 0.5vmin solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  margin: 0.5vh;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  overflow: hidden;
+  top: -5px;
+  left: -5px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kbutton:active {
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 0px 0px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kbutton:click {
+  top: 0px;
+  left: 0px;
+  box-shadow: 0px 0px 0px 0px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.kbutton:focus {
+  background-color: var(--white);
+}
+.kclick {
+  -webkit-appearance: button;
+  appearance: button;
+  background-color: transparent;
+  border: 0 solid #e5e7eb;
+  box-sizing: border-box;
+  color: #482307;
+  cursor: pointer;
+  text-transform: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: var(--shadow2);
+}
+.kclick:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+    0px 1px 1px rgba(81, 41, 10, 0.15);
+  transform: translateY(0.125rem);
+}
+.kclick:focus {
+  box-shadow: rgba(72, 35, 7, 0.46) 0 0 0 4px,
+    -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+}
+
+/* -style */
+.kborder{
+  border: 1px solid var(--black);
+}
+.kborderb{
+  border-bottom: 1px solid var(--black);
+}
+
+/* -debug */
+
+* {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+* * {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+* * * {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+* * * * {
+  background-color: rgba(255, 0, 255, 0.1);
+}
+
+* * * * * {
+  background-color: rgba(0, 255, 255, 0.1);
+}
+
+* * * * * * {
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+* * * * * * * {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+* * * * * * * * {
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+* * * * * * * * * {
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* debug end*/
+
+/* color */
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  --text-primary: red;
+  --text-secondary: blue;
+
+  /* --bg-primary: #c4c4c4; */
+  --bg-secondary: #c4c4c4;
+  /* --bg-secondary: #e5e5e5; */
+  --bg-primary: #e5e5e5;
+
+  --white: white;
+  --black: rgb(40, 40, 40);
+
+  --shadow1: rgb(38, 57, 77) 0px 20px 30px -10px,
+    rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  --shadow2: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  --shadowMin: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
